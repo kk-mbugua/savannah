@@ -1,0 +1,46 @@
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.navOptions {
+    display: flex;
+    flex-direction: row;
+}
+
+.navItems {
+    padding-right: 40px;
+}
+
+.shopping {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.shoppingMenu {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.shoppingItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.itemImg {
+    width: 150px;
+}
+
+.itemDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
