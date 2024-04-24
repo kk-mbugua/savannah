@@ -1,17 +1,17 @@
-import testing from "../assets/images/6.jpeg"
 import { AiOutlineShopping } from "react-icons/ai";
+import { shoppingItemsArray } from "../utils/testData";
 
-function item () {
+function Item ({details}) {
     return (
-        <div>
+        <div className="shoppingItem">
             <a href="/">
-                <img src={testing} alt="img" className="itemImg"></img>
+                <img src={details.image} alt="img"></img>
             </a>
             <a href="/">
-                <div className="itemName">All Black Outfit</div>
+                <div className="itemName">{details.name}</div>
             </a>
             <div className="itemDetails">
-                <div className="itemPrice">Kes 500</div>
+                <div className="itemPrice">Kes {details.price}</div>
                 <div className="itemAction">
                     <button><AiOutlineShopping /></button>
                 </div>
@@ -21,24 +21,13 @@ function item () {
 }
 
 function ShoppingItems() {
+    const comp = shoppingItemsArray.map(itemDetails =>{
+        return <Item key={itemDetails.id} details={itemDetails}/>;
+    })
     return (
-        <>
-        <div className="shoppingItemsRow">
-            {item()}
-            {item()}
-            {item()}
-        </div>
-        <div className="shoppingItemsRow">
-            {item()}
-            {item()}
-            {item()}
+        <div className="shoppingItemsContent">
+            {comp}
         </div> 
-        <div className="shoppingItemsRow">
-            {item()}
-            {item()}
-            {item()}
-        </div> 
-        </> 
     )
 }
 

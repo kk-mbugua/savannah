@@ -80,20 +80,28 @@
 
 .shoppingItems {
     display: flex;
-    flex-direction: column;
     width: 80%;
-    padding-right: 5%;
 }
 
-.shoppingItemsRow {
+.shoppingItemsContent {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
+    max-width: 800px; /* Adjust the max-width as per your requirement */
+    margin: 0 auto;
 }
 
-.itemImg {
-    width: 150px;
+.shoppingItem {
+    max-width: 100%;
+    height: auto;
+    margin-left: 5px; /* Adjust the margin as per your requirement */
+    margin-bottom: 13px;
+    flex: 1 1 calc(33.33% - 10px); /* Change 33.33% to adjust the number of images in a row */
+    max-width: calc(33.33% - 10px); /* Change 33.33% to adjust the number of images in a row */
+}
+
+.shoppingItem img {
+    width: 100%;
+    height: 250px;
 }
 
 .itemName {
