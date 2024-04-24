@@ -7,7 +7,9 @@ function item () {
             <a href="/">
                 <img src={testing} alt="img" className="itemImg"></img>
             </a>
-            <div className="itemName"></div>
+            <a href="/">
+                <div className="itemName">All Black Outfit</div>
+            </a>
             <div className="itemDetails">
                 <div className="itemPrice">Kes 500</div>
                 <div className="itemAction">
@@ -20,11 +22,23 @@ function item () {
 
 function ShoppingItems() {
     return (
-        <div className="shoppingItems">
+        <>
+        <div className="shoppingItemsRow">
             {item()}
             {item()}
             {item()}
-        </div>  
+        </div>
+        <div className="shoppingItemsRow">
+            {item()}
+            {item()}
+            {item()}
+        </div> 
+        <div className="shoppingItemsRow">
+            {item()}
+            {item()}
+            {item()}
+        </div> 
+        </> 
     )
 }
 

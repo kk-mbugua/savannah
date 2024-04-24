@@ -1,18 +1,27 @@
 
-.header {
+.titleBar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
     margin-top: 20px;
+    border-bottom: 2px solid blueviolet;
+
+}
+
+.title {
+    margin-left: 20px;
 }
 
 .navOptions {
+    width: 40%;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .navItems {
-    padding-right: 40px;
+    margin-right: 40px;
 }
 
 .shopping {
@@ -22,21 +31,75 @@
     width: 100%;
 }
 
+.previewWindow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;   
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.previewWindowContent {
+    width: 90%;
+    height: 90%;
+    background-image: url("../images/8.jpeg");
+}
+
+.previewWindowContent input {
+    width: 60%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 80px;
+    margin-top: 26%;
+}
+
+.shopping {
+    width: auto;
+}
+
 .shoppingMenu {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 20%;
+}
+
+.shoppingMenu button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    border-radius: 70px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.shoppingMenu button:hover{
+    background-color: blueviolet;
 }
 
 .shoppingItems {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
     width: 80%;
+    padding-right: 5%;
+}
+
+.shoppingItemsRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .itemImg {
     width: 150px;
+}
+
+.itemName {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .itemDetails {
