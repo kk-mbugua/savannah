@@ -9,19 +9,19 @@ function Header() {
             </div>
             <div className="navOptions">
                 <div className="navItem">
-                    <Link to={PathConstants.HOME}></Link>
+                    <Link to={PathConstants.HOME}>HOME</Link>
                 </div>
                 <div className="navItem">
-                    <Link to={PathConstants.CART}></Link>
+                    <Link to={PathConstants.CART}>CART</Link>
                 </div>
                 <div className="navItem">
-                    <Link to={PathConstants.PREORDER}></Link>
+                    <Link to={PathConstants.PREORDER}>PRE-ORDER</Link>
                 </div>
                 <div className="navItem">
-                    <Link to={PathConstants.ABOUT}></Link>
+                    <Link to={PathConstants.CONTACT}>CONTACT</Link>
                 </div>
                 <div className="navItem">
-                    <Link to={PathConstants.CONTACT}></Link>
+                    <Link to={PathConstants.ABOUT}>ABOUT</Link>
                 </div>
             </div>
         </div>
