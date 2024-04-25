@@ -9,9 +9,9 @@ const About = React.lazy(() => import("../pages/About"))
 
 const routes = [
     { path: PathConstants.HOME, element: <Home /> },
-    { path: PathConstants.HOME, element: <Cart /> },
-    { path: PathConstants.HOME, element: <Details /> },
-    { path: PathConstants.HOME, element: <Contact /> },
+    { path: PathConstants.CART, element: <Cart /> },
+    { path: PathConstants.DETAILS+"/:id", element: <Details /> },
+    { path: PathConstants.CONTACT, element: <Contact /> },
     { path: PathConstants.ABOUT, element: <About /> },
 ]
 

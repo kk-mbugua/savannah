@@ -81,5 +81,5 @@ export function getItems() {
 }
 
 export function getItem(id) {
-    return shoppingItemsArray(id-1);
+    return shoppingItemsArray[id-1];
 }

@@ -1,13 +1,14 @@
 import { AiOutlineShopping } from "react-icons/ai";
 import { getItems } from "../services/shoppingList";
+import PathConstants from "../routes/pathsConstants";
 
 function Item ({details}) {
     return (
         <div className="shoppingItem">
-            <a href="/">
+            <a href={PathConstants.DETAILS+ "/" + details.id}>
                 <img src={details.image} alt="img"></img>
             </a>
-            <a href="/">
+            <a href={PathConstants.DETAILS+ "/" + details.id}>
                 <div className="itemName">{details.name}</div>
             </a>
             <div className="itemDetails">
