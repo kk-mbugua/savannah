@@ -115,3 +115,24 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+.detail {
+    display: flex;
+    flex-direction: row;
+}
+
+.detailsImageContainer {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.detailsImageContainer img {
+    height: 50%;
+}
+
+.detailsDataContainer {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
