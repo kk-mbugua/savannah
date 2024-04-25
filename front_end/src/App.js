@@ -7,12 +7,14 @@ import {
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
+import Page404 from "./pages/Page404"
 import Layout from "./components/Layout";
 
 function App() {
 	const router = createBrowserRouter([
 		{
 			element: <Layout />,
+			errorElement: <Page404 />,
 			children: [
 				{
 					path: "/",
@@ -29,6 +31,7 @@ function App() {
 			],
 		},
 	])
+
 	return (
 		<div className="App">
 			<RouterProvider router={router} />
