@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import PathConstants from "../pathsConstants";
+import PathConstants from "../routes/pathsConstants";
 
 function Header() {
     return (

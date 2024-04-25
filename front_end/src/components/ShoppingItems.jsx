@@ -1,5 +1,5 @@
 import { AiOutlineShopping } from "react-icons/ai";
-import { shoppingItemsArray } from "../utils/testData";
+import { getItems } from "../services/shoppingList";
 
 function Item ({details}) {
     return (
@@ -21,7 +21,7 @@ function Item ({details}) {
 }
 
 function ShoppingItems() {
-    const comp = shoppingItemsArray.map(itemDetails =>{
+    const comp = getItems().map(itemDetails =>{
         return <Item key={itemDetails.id} details={itemDetails}/>;
     })
     return (
