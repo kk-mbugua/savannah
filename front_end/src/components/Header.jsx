@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+import PathConstants from "../pathsConstants";
 
 function Header() {
     return (
@@ -7,19 +9,19 @@ function Header() {
             </div>
             <div className="navOptions">
                 <div className="navItem">
-                    <a href="/">HOME</a>
+                    <Link to={PathConstants.HOME}></Link>
                 </div>
                 <div className="navItem">
-                    <a href="/cart">CART</a>
+                    <Link to={PathConstants.CART}></Link>
                 </div>
                 <div className="navItem">
-                    <a href="/pre-order">PRE ORDER</a>
+                    <Link to={PathConstants.PREORDER}></Link>
                 </div>
                 <div className="navItem">
-                    <a href="/about">ABOUT</a> 
+                    <Link to={PathConstants.ABOUT}></Link>
                 </div>
                 <div className="navItem">
-                    <a href="/contact">CONTACT</a>
+                    <Link to={PathConstants.CONTACT}></Link>
                 </div>
             </div>
         </div>
