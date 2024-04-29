@@ -2,10 +2,10 @@ import ShoppingItems from "../components/ShoppingItems";
 
 function Home () {
     return (
-    <div>
+    <div className="home">
         <div className="previewWindow">
-            <div className="previewWindowContent">
-                <input type="search" name="search" id="homeSearch" placeholder="                Search..."/>
+            <div className="homeSearch">
+                <input type="search" name="search" placeholder="Search..."/>
             </div>
         </div>
         <div className="shopping">
