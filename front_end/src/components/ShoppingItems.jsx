@@ -30,7 +30,7 @@ function ShoppingItems() {
         return <Item key={itemDetails.id} details={itemDetails}/>;
     })
     return (
-        <div className="shoppingItemsContent">
+        <div className="shoppingItems">
             {comp}
         </div> 
     )

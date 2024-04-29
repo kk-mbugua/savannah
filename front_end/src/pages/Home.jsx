@@ -4,7 +4,10 @@ function Home () {
     return (
     <div className="home">
         <div className="previewWindow">
-            <div className="homeSearch">
+            <div className="previewTitle">
+                <h4 style={{display: "inline-block"}}>Our New Collection</h4>
+            </div>
+            <div className="previewSearch">
                 <input type="search" name="search" placeholder="Search..."/>
             </div>
         </div>
@@ -15,10 +18,7 @@ function Home () {
                 <button>Casual Bag</button>
                 <button>Party Bag</button>
             </div>
-            <div className="shoppingItems">
-                <ShoppingItems />
-            </div>
-            
+            <ShoppingItems />
         </div>
     </div>
     )
