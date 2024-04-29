@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  /* background-image: url("../images/bg/bg1/6029159.jpg"); */
+  /* background-image: url("../images/bg/bg2/5515594.jpg"); */
+  background-image: url("../images/bg/bg3/vecteezy_abstract-background-line-wave-element-sound-spectrum_8129912.jpg");
+  /* background-image: url("../images/bg/bg4/vecteezy_abstract-wave-shape-purple-background-vector_7696669.jpg"); */
+  /* background-image: url("../images/bg/bg5/vecteezy_modern-colorful-wavy-line-background-design-wave-curve_13545728.jpg"); */
 }
 
 .App-logo {
@@ -27,6 +32,8 @@
 .App-link {
   color: #61dafb;
 }
+
+
 
 @keyframes App-logo-spin {
   from {
