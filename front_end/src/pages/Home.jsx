@@ -1,4 +1,5 @@
 import ShoppingItems from "../components/ShoppingItems";
+import MagIcon from "../assets/images/mag_icon.png"
 
 function Home () {
     return (
@@ -9,6 +10,12 @@ function Home () {
             </div>
             <div className="previewSearch">
                 <input type="search" name="search" placeholder="Search..."/>
+                <img
+                    id="icon"
+                    src={MagIcon}
+                    alt="icon"
+                    onClick={()=> console.log("search icon clicked")}
+                />
             </div>
         </div>
         <div className="shopping">
