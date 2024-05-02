@@ -72,7 +72,6 @@
 .shopping {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     width: 100%;
 }
 
@@ -97,18 +96,20 @@
 }
 
 .shoppingItems {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 800px; /* Adjust the max-width as per your requirement */
+    display: grid;
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .shoppingItem {
-    max-width: 100%;
-    height: auto;
-    margin-left: 5px; /* Adjust the margin as per your requirement */
-    margin-bottom: 13px;
-    flex: 1 1 calc(33.33% - 10px); /* Change 33.33% to adjust the number of images in a row */
-    max-width: calc(33.33% - 10px); /* Change 33.33% to adjust the number of images in a row */
+    /* max-width: 100%; */
+    /* height: auto; */
+    /* margin-left: 5px; Adjust the margin as per your requirement */
+    /* margin-bottom: 13px; */
+    /* flex: 1 1 calc(33.33% - 10px); Change 33.33% to adjust the number of images in a row */
+    /* max-width: calc(33.33% - 10px); Change 33.33% to adjust the number of images in a row */
 }
 
 .shoppingItem img {
