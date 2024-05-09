@@ -1,14 +1,30 @@
 import { useParams } from "react-router-dom"
-import { getItem } from "../services/productList";
 import { addToCart } from "../services/cart";
+import { useEffect, useState } from "react";
+import getImgSrc from "../utils/getImgSrc";
+import { getProduct } from "../services/productService";
 
-function Details() {
-    const { id }= useParams();
-    const details = getItem(id);
+function ProductPage() {
+    const [details, setDetails] = useState({})
+    const { id } = useParams();
+
+    useEffect(()=> {
+        fetchData();
+    }, [id])
+
+    async function fetchData() {
+        console.log("should wait here")
+        await getProduct(id)
+        .then((res)=>{
+            setDetails(res);
+        })
+        .catch(err=> console.log("error fetching data")) 
+    }
+
     return (
         <div className="detail">
             <div className="detailsImageContainer">
-                <img src={details.image} alt="" />
+                <img src={getImgSrc(details.img_url)} alt={details.name} />
                 <p>{details.name}</p>
             </div>
             <div className="detailsDataContainer">
@@ -25,4 +41,4 @@ function Details() {
     )
 }
 
-export default Details
+export default ProductPage

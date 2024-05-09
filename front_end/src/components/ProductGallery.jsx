@@ -1,22 +1,25 @@
 
 import ProductCard from "./ProductCard";
-import { getItems } from "../services/productList";
 import { useEffect, useState } from "react";
-import axios from 'axios';
+import { getProducts } from "../services/productService";
 
 function ProductGallery() {
     const [gallery, setGallery] = useState([]);
 
     useEffect(()=> {
-        
-    }, []);
+        async function fetchData() {
+            const data = await getProducts()
+            setGallery(data);
+        }
+        fetchData();
+    }, [])
 
-    const comp = getItems().map(itemDetails =>{
-        return <ProductCard key={itemDetails.id} details={itemDetails}/>;
+    const productCards = gallery.map(productDetails =>{
+        return <ProductCard key={productDetails._id} details={productDetails}/>;
     })
     return (
         <div className="shoppingItems">
-            {comp}
+            {productCards}
         </div> 
     )
 }
