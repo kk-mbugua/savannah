@@ -18,7 +18,7 @@ function ProductGallery() {
         return <ProductCard key={productDetails._id} details={productDetails}/>;
     })
     return (
-        <div className="shoppingItems">
+        <div className="productGallery">
             {productCards}
         </div> 
     )

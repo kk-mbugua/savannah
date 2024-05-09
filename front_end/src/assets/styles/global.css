@@ -1,4 +1,8 @@
 
+div {
+    color: white;
+}
+
 .titleBar {
     display: flex;
     flex-direction: row;
@@ -95,7 +99,7 @@
     background-color: blueviolet;
 }
 
-.shoppingItems {
+.productGallery {
     display: grid;
     max-width: 100%;
     margin: 0 auto;
@@ -103,16 +107,17 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.shoppingItem {
+.productCard {
     /* max-width: 100%; */
     /* height: auto; */
     /* margin-left: 5px; Adjust the margin as per your requirement */
     /* margin-bottom: 13px; */
     /* flex: 1 1 calc(33.33% - 10px); Change 33.33% to adjust the number of images in a row */
     /* max-width: calc(33.33% - 10px); Change 33.33% to adjust the number of images in a row */
+    color: white;
 }
 
-.shoppingItem img {
+.productCard img {
     width: 100%;
     height: 250px;
 }

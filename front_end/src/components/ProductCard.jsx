@@ -7,7 +7,7 @@ import getImgSrc from "../utils/getImgSrc";
 function ProductCard ({details}) {
     const itemLink = PathConstants.DETAILS+ "/" + details._id
     return (
-        <div className="shoppingItem">
+        <div className="productCard">
             <Link to={itemLink}>
                 <img src={getImgSrc(details.img_url)} alt={details.name}></img>
             </Link>
