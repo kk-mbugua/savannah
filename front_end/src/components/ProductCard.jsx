@@ -1,11 +1,9 @@
-import { AiOutlineShopping } from "react-icons/ai";
-import { getItems } from "../services/shoppingList";
-import { Link } from "react-router-dom";
-import { addToCart } from "../services/cart";
 import PathConstants from "../routes/pathsConstants";
+import { addToCart } from "../services/cart";
+import { AiOutlineShopping } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
-
-function Item ({details}) {
+function ProductCard ({details}) {
     const itemLink = PathConstants.DETAILS+ "/" + details.id
     return (
         <div className="shoppingItem">
@@ -25,15 +23,4 @@ function Item ({details}) {
     )
 }
 
-function ShoppingItems() {
-    const comp = getItems().map(itemDetails =>{
-        return <Item key={itemDetails.id} details={itemDetails}/>;
-    })
-    return (
-        <div className="shoppingItems">
-            {comp}
-        </div> 
-    )
-}
-
-export default ShoppingItems
+export default ProductCard

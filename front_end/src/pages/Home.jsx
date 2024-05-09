@@ -1,5 +1,5 @@
-import ShoppingItems from "../components/ShoppingItems";
 import MagIcon from "../assets/images/mag_icon.png"
+import ProductGallery from "../components/ProductGallery";
 
 function Home () {
     return (
@@ -25,7 +25,7 @@ function Home () {
                 <button>Casual Bag</button>
                 <button>Party Bag</button>
             </div>
-            <ShoppingItems />
+            <ProductGallery />
         </div>
     </div>
     )
