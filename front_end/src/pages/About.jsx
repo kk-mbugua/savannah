@@ -2,7 +2,7 @@
 function About() {
     return (
         <>
-            This is the about page
+            <p style={{color: "white"}}>This is the ABOUT page</p>
         </>
     )
 }

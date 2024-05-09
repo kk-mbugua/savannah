@@ -19,6 +19,8 @@ function App() {
 		},
 	])
 
+	console.log("routes:", routes)
+
 	return (
 		<div className="App">
 			<RouterProvider router={router} />

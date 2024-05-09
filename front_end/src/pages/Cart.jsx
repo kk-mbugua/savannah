@@ -2,7 +2,7 @@
 function Cart() {
     return (
         <>
-            Cart Page
+            <p style={{color: "white"}}>Cart Page</p>
         </>
     )
 }

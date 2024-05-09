@@ -2,7 +2,7 @@
 function Contact() {
     return (
         <>
-            This is the contact page
+            <p style={{color: "white"}}>This is the CONTACT page</p>
         </>
     )
 }

@@ -4,7 +4,8 @@ const PathConstants = {
     CART: "cart",
     PREORDER: "preorder",
     CONTACT: "contact",
-    ABOUT: "about"
+    ABOUT: "about",
+    MANAGEMENT: "management"
 }
 
 export default PathConstants

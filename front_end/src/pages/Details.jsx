@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom"
-import { getItem } from "../services/shoppingList";
+import { getItem } from "../services/productList";
 import { addToCart } from "../services/cart";
 
 function Details() {
